@@ -14,7 +14,7 @@ export default class PortfolioContainer extends Component {
       const data =  ['LDS Church', '1800Contacts', 'Mountain America']
 
       return data.map(item => {
-        return <PortfolioItem />
+        return <PortfolioItem title={item} />
       })
     }
   // State

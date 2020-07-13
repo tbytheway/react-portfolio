@@ -3,29 +3,56 @@ import React, { Component } from "react";
 import PortfolioItem from "./portfolio-item";
 
 export default class PortfolioContainer extends Component {
-    constructor() {
-      super();
+  constructor() {
+    super();
 
+    this.state = {
+      pageTitle: "Welcome to my portfolio",
+      isLoading: false,
+      data: [
+        { title: "LDS Church", category: "Religious" },
+        { title: "1800 Contacts", category: "Retail" },
+        { title: "Mountain America", category: "Financial" },
+      ]
+    };
 
-      console.log("Portfolio container has rendered")
-    }
+    this.handleFilter = this.handleFilter.bind(this);
+  }
 
-    portfolioItems() {
-      const data =  ['LDS Church', '1800Contacts', 'Mountain America']
-
-      return data.map(item => {
-        return <PortfolioItem title={item} />
+  handleFilter(filter) {
+    this.setState({
+      data: this.state.data.filter(item => {
+        return item.category === filter;
       })
-    }
-  // State
-  // Lifecycle hooks
+    });
+  }
+
+  portfolioItems() {
+    return this.state.data.map(item => {
+      return <PortfolioItem title={item.title} url={"google.com"} />;
+    });
+  }
+
   render() {
+    if (this.state.isLoading) {
+      return <div>Loading...</div>;
+    }
+
     return (
       <div>
-        <h2>Portfolio items go here updated...</h2>
-        {this.portfolioItems()}
+        <h2>{this.state.pageTitle}</h2>
 
-        <PortfolioItem />
+        <button onClick={() => this.handleFilter("Religious")}>
+          Religious
+        </button>
+        <button onClick={() => this.handleFilter("Retail")}>
+          Retail
+        </button>
+        <button onClick={() => this.handleFilter("Financial")}>
+          Financial
+        </button>
+
+        {this.portfolioItems()}
       </div>
     );
   }

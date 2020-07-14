@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 import PortfolioItem from "./portfolio-item";
 
@@ -9,11 +10,7 @@ export default class PortfolioContainer extends Component {
     this.state = {
       pageTitle: "Welcome to my portfolio",
       isLoading: false,
-      data: [
-        { title: "LDS Church", category: "Religious" },
-        { title: "1800 Contacts", category: "Retail" },
-        { title: "Mountain America", category: "Financial" },
-      ]
+      data: []
     };
 
     this.handleFilter = this.handleFilter.bind(this);
@@ -27,10 +24,35 @@ export default class PortfolioContainer extends Component {
     });
   }
 
+  getPortfolioItems() {
+    axios
+      .get("https://terrybytheway.devcamp.space/portfolio/portfolio_items")
+      .then(response => {
+        this.setState({
+          data: response.data.portfolio_items
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
   portfolioItems() {
     return this.state.data.map(item => {
-      return <PortfolioItem title={item.title} url={"google.com"} />;
+      debugger;
+      return (
+        <PortfolioItem
+          key={item.id}
+          title={item.name}
+          url={item.url}
+          slug={item.id}
+        />
+      );
     });
+  }
+
+  componentDidMount() {
+    this.getPortfolioItems();
   }
 
   render() {
@@ -42,14 +64,14 @@ export default class PortfolioContainer extends Component {
       <div>
         <h2>{this.state.pageTitle}</h2>
 
-        <button onClick={() => this.handleFilter("Religious")}>
-          Religious
+        <button onClick={() => this.handleFilter("eCommerce")}>
+          eCommerce
         </button>
-        <button onClick={() => this.handleFilter("Retail")}>
-          Retail
+        <button onClick={() => this.handleFilter("Scheduling")}>
+          Scheduling
         </button>
-        <button onClick={() => this.handleFilter("Financial")}>
-          Financial
+        <button onClick={() => this.handleFilter("Enterprise")}>
+          Enterprise
         </button>
 
         {this.portfolioItems()}

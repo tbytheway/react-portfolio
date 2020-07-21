@@ -1,2 +1,2 @@
-# Jordan Hudgens React Portfolio Application
+# Terry Bytheway React Portfolio Application
 

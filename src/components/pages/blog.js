@@ -16,11 +16,11 @@ class Blog extends Component {
     };
 
     this.getBlogItems = this.getBlogItems.bind(this);
-    this.activateInfiniteScroll();
+    this.onScroll = this.onScroll.bind(this);
+    window.addEventListener("scroll", this.onScroll, false);
   }
 
-  activateInfiniteScroll() {
-    window.onscroll = () => {
+  onScroll() {
       if (
         this.state.isLoading ||
         this.state.blogItems.length === this.state.totalCount
@@ -34,7 +34,7 @@ class Blog extends Component {
       ) {
         this.getBlogItems();
       }
-    };
+    
   }
 
   getBlogItems() {

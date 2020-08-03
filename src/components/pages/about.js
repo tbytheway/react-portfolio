@@ -13,23 +13,7 @@ export default function() {
         }}
       />
       <div className="right-column">
-        Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis
-        dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.
-        Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget
-        risus varius blandit sit amet non magna. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida
-        at eget metus. Donec sed odio dui. Cras mattis consectetur purus sit
-        amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nulla
-        vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non
-        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-        elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-        et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis
-        risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis
-        euismod semper.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis sed ex sit amet venenatis. Morbi ultrices eget magna in congue. Nullam cursus urna ut dui facilisis, ac auctor ligula pulvinar. Maecenas congue aliquet consectetur. Vestibulum eu lacus nibh. Cras erat augue, vestibulum feugiat ullamcorper lobortis, hendrerit sed risus. Cras vulputate felis non orci bibendum suscipit. Nunc porttitor, urna quis sollicitudin aliquam, ex leo vestibulum leo, eu aliquam mauris dui eget dui. Mauris at ante et mauris tempor maximus nec quis velit. Aliquam efficitur, eros ut suscipit ornare, justo enim efficitur dolor, imperdiet ultricies enim erat in turpis. Suspendisse facilisis lacinia leo ac iaculis. Proin convallis ultricies neque, id euismod nunc dictum a.
       </div>
     </div>
   );

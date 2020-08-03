@@ -4,7 +4,7 @@ import loginImg from "../../../static/assets/images/auth/login.jpg";
 
 export default class Auth extends Component {
   constructor(props) {
-    super(props);
+    super(props); 
 
     this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     this.handleUnsuccessfulAuth = this.handleUnsuccessfulAuth.bind(this);

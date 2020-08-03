@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactPagePicture from "../../../static/assets/images/auth/login.jpg";
 
+
 export default function() {
   return (
     <div className="content-page-wrapper">

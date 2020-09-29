@@ -9,7 +9,7 @@ export default class PortfolioForm extends Component {
     this.state = {
       name: "",
       description: "",
-      category: "eCommerce",
+      category: "Apps",
       position: "",
       url: "",
       thumb_image: "",
@@ -71,11 +71,11 @@ export default class PortfolioForm extends Component {
         id: id,
         name: name || "",
         description: description || "",
-        category: category || "eCommerce",
+        category: category || "Apps",
         position: position || "",
         url: url || "",
         editMode: true,
-        apiUrl: `https://jordan.devcamp.space/portfolio/portfolio_items/${id}`,
+        apiUrl: `https://terrybytheway.devcamp.space/portfolio/portfolio_items/${id}`,
         apiAction: "patch",
         thumb_image_url: thumb_image_url || "",
         banner_image_url: banner_image_url || "",
@@ -164,14 +164,14 @@ export default class PortfolioForm extends Component {
         this.setState({
           name: "",
           description: "",
-          category: "eCommerce",
+          category: "Apps",
           position: "",
           url: "",
           thumb_image: "",
           banner_image: "",
           logo: "",
           editMode: false,
-          apiUrl: "https://jordan.devcamp.space/portfolio/portfolio_items",
+          apiUrl: "https://terrybytheway.devcamp.space/portfolio/portfolio_items",
           apiAction: "post"
         });
 
@@ -222,9 +222,9 @@ export default class PortfolioForm extends Component {
             onChange={this.handleChange}
             className="select-element"
           >
-            <option value="eCommerce">eCommerce</option>
-            <option value="Scheduling">Scheduling</option>
-            <option value="Enterprise">Enterprise</option>
+            <option value="Apps">Apps</option>
+            <option value="Family">Family</option>
+            <option value="Something Else">Something Else</option>
           </select>
         </div>
 

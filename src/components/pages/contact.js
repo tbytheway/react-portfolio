@@ -21,7 +21,7 @@ export default function() {
               <FontAwesomeIcon icon="phone" />
             </div>
 
-            <div className="text">555-555-5555</div>
+            <div className="text">801-243-1866</div>
           </div>
 
           <div className="bullet-point-group">
@@ -38,6 +38,13 @@ export default function() {
             </div>
 
             <div className="text">Herriman, UT</div>
+          </div>
+          <div className="bullet-point-group">
+            <div className="icon">
+              <FontAwesomeIcon icon="faLinkedin" />
+            </div>
+
+            <div className="text">linkedin.com/in/terrybytheway</div>
           </div>
         </div>
       </div>

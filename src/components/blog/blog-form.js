@@ -156,13 +156,16 @@ export default class BlogForm extends Component {
             value={this.state.title}
           />
 
-          <input
+          <select
             type="text"
             onChange={this.handleChange}
             name="blog_status"
             placeholder="Blog status"
             value={this.state.blog_status}
-          />
+          >
+            <option value="draft">Draft</option>
+            <option value="published">Published</option>
+          </select>
         </div>
 
         <div className="one-column">

@@ -10,6 +10,8 @@ import {
   faLock
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 const Icons = () => {
   return library.add(
@@ -21,7 +23,8 @@ const Icons = () => {
     faPhone,
     faEnvelope,
     faMapMarkedAlt,
-    faLock
+    faLock,
+    faLinkedin
   );
 };
 

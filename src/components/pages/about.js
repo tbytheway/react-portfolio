@@ -13,7 +13,15 @@ export default function() {
         }}
       />
       <div className="right-column">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis sed ex sit amet venenatis. Morbi ultrices eget magna in congue. Nullam cursus urna ut dui facilisis, ac auctor ligula pulvinar. Maecenas congue aliquet consectetur. Vestibulum eu lacus nibh. Cras erat augue, vestibulum feugiat ullamcorper lobortis, hendrerit sed risus. Cras vulputate felis non orci bibendum suscipit. Nunc porttitor, urna quis sollicitudin aliquam, ex leo vestibulum leo, eu aliquam mauris dui eget dui. Mauris at ante et mauris tempor maximus nec quis velit. Aliquam efficitur, eros ut suscipit ornare, justo enim efficitur dolor, imperdiet ultricies enim erat in turpis. Suspendisse facilisis lacinia leo ac iaculis. Proin convallis ultricies neque, id euismod nunc dictum a.
+      A year ago, if you would have told me that I could create a site like the one you are reading this on, I would have doubted you. 
+      Fast forward to today and I am creating things I never thought I would.  Seeing things change and appear after a few keystrokes(okay a lot of keystrokes) is fun and amazing.
+      I have a lot of years in the IT industry and I can't tell you how many times I wished I could write code.  I can finally say that I can.
+      I didn't get my first email address till I attended college.  I got my first IT job because I worked in the mailroom and on my mailruns
+      I would hear people complaining about printer problems or other computer issues so I would fix them, because I liked to.  So the IT dept came 
+      to me and offered me a position.  I had few PC support positions until one day my boss asked if I wanted to be over the phone system.  I'd barely even seen
+      the phone system, but I said yes.  We eventually upgraded to a Cisco phone system which was absolutly nothing like our old system.
+      Learning new things is not new to me, but it's always been along my career path.  Learning to code was new and a complete reboot of my career.
+      I look forward to what adventures it brings.
       </div>
     </div>
   );

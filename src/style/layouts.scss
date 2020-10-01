@@ -19,16 +19,27 @@
       .bullet-point-group {
         display: flex;
         align-items: center;
+        
 
         .icon {
           font-size: 2em;
           color: $teal;
+          
         }
 
         .text {
           font-size: 1.5em;
           font-weight: 900;
           margin-left: 21px;
+          text-decoration: none;
+          
+        }
+        .text :link {
+          text-decoration: none;
+        }
+        .text :visited {
+          text-decoration: none;
+          color: black;
         }
       }
     }

@@ -67,6 +67,7 @@ export default class PortfolioDetail extends Component {
             Visit {name}
           </a>
         </div>
+        
       </div>
     );
   }

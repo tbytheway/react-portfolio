@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactPagePicture from "../../../static/assets/images/auth/login.jpg";
-
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function() {
   return (
@@ -41,10 +42,17 @@ export default function() {
           </div>
           <div className="bullet-point-group">
             <div className="icon">
-              <FontAwesomeIcon icon="faLinkedin" />
+              <FontAwesomeIcon icon={ faLinkedin } />
             </div>
 
-            <div className="text">linkedin.com/in/terrybytheway</div>
+            <div className="text"><a href="https://linkedin.com/in/terrybytheway">linkedin.com/in/terrybytheway</a></div>
+          </div>
+          <div className="bullet-point-group">
+            <div className="icon">
+              <FontAwesomeIcon icon={ faGithub } />
+            </div>
+
+            <div className="text"><a href="https://github.com/tbytheway">github.com/tbytheway</a></div>
           </div>
         </div>
       </div>
